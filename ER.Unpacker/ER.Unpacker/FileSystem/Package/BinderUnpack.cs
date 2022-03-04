@@ -7,7 +7,6 @@ namespace ER.Unpacker
     class BinderUnpack
     {
         static List<BinderEntry> m_EntryTable = new List<BinderEntry>();
-        static List<string> m_ResolvedList = new List<string>();
 
         public static void iDoIt(String m_BinderFile, String m_DstFolder)
         {
@@ -99,34 +98,29 @@ namespace ER.Unpacker
                 foreach (var m_Entry in m_EntryTable)
                 {
                     String m_FileName = BinderHashList.iGetNameFromHashList(m_Entry.dwNameHash);
-                    m_ResolvedList.Add("/" + m_FileName.Replace(@"\", "/"));
                     String m_FullPath = m_DstFolder + m_FileName;
 
                     Utils.iSetInfo("[UNPACKING]: " + m_FileName);
                     Utils.iCreateDirectory(m_FullPath);
 
-                    //TArchiveStream.Seek(m_Entry.dwOffset, SeekOrigin.Begin);
-                    //var lpBuffer = TArchiveStream.ReadBytes(m_Entry.dwPaddedSize);
+                    TArchiveStream.Seek(m_Entry.dwOffset, SeekOrigin.Begin);
+                    var lpBuffer = TArchiveStream.ReadBytes(m_Entry.dwPaddedSize);
 
-                    //if (m_Entry.lpAesKey != null)
-                    //{
-                    //    lpBuffer = BinderCipher.iDecryptByAES(lpBuffer, m_Entry);
-                    //}
+                    if (m_Entry.lpAesKey != null)
+                    {
+                        lpBuffer = BinderCipher.iDecryptByAES(lpBuffer, m_Entry);
+                    }
 
-                    //UInt32 dwMagic = BitConverter.ToUInt32(lpBuffer, 0);
-                    //if (dwMagic == 0x584344)
-                    //{
-                    //    BinderContainer.iDecompressFile(lpBuffer, m_FullPath);
-                    //}
-                    //else
-                    //{
-                    //    File.WriteAllBytes(m_FullPath, lpBuffer);
-                    //}
+                    UInt32 dwMagic = BitConverter.ToUInt32(lpBuffer, 0);
+                    if (dwMagic == 0x584344)
+                    {
+                        BinderContainer.iDecompressFile(lpBuffer, m_FullPath);
+                    }
+                    else
+                    {
+                        File.WriteAllBytes(m_FullPath, lpBuffer);
+                    }
                 }
-
-                StreamWriter TResolvedWriter = new StreamWriter(@"\1.list");
-                m_ResolvedList.ForEach(TResolvedWriter.WriteLine);
-                TResolvedWriter.Close();
 
                 TArchiveStream.Dispose();
             }
