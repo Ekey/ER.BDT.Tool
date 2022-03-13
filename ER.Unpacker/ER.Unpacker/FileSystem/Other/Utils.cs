@@ -46,6 +46,15 @@ namespace ER.Unpacker
             return m_Arg;
         }
 
+        public static String iCheckBinderFile(String m_Arg)
+        {
+            if (Path.GetExtension(m_Arg) == ".bdt")
+            {
+                m_Arg = m_Arg.Replace(".bdt",".bhd");
+            }
+            return m_Arg;
+        }
+
         public static void iCreateDirectory(String m_Directory)
         {
             if (!Directory.Exists(Path.GetDirectoryName(m_Directory)))

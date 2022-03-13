@@ -30,7 +30,7 @@ namespace ER.Unpacker
                 return;
             }
 
-            String m_BinderFile = args[0];
+            String m_BinderFile = Utils.iCheckBinderFile(args[0]);
             String m_Output = Utils.iCheckArgumentsPath(args[1]);
 
             if (!File.Exists(m_BinderFile))
