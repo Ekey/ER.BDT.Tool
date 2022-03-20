@@ -41854,7 +41854,6 @@
 /enus/wem/22/227577310.wem
 /enus/wem/22/227577549.wem
 /enus/wem/22/227773596.wem
-/enus/wem/22/227838361.wem
 /enus/wem/22/227884155.wem
 /enus/wem/22/227951760.wem
 /enus/wem/22/227998957.wem
@@ -88031,6 +88030,17 @@
 /sfx/sfxbnd_m60_10_09_02.ffxbnd.dcx
 /sfx/sfxbnd_m60_21_18_01.ffxbnd.dcx
 /sfx/sfxbnd_m60_42_36_00.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302607.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302608.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302609.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302613.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302614.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302622.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302623.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302638.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302639.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302646.ffxbnd.dcx
+/sfx/sfxbnd_mimic000302654.ffxbnd.dcx
 /shader/grass.shaderbnd.dcx
 /shader/gxdecal.shaderbnd.dcx
 /shader/gxffxshader.shaderbnd.dcx
@@ -88047,6 +88057,7 @@
 /shader/speedtree_[rt].shaderbdlebnd.dcx
 /sound/additionaleventinfo.moaeibnd.dcx
 /sound/enus/additionaleventinfo.moaeibnd.dcx
+/sound/pck/first.pck
 /sound/pck/normal.pck
 /sound/soundbanksinfo.mobnkinfo
 /vc700.bnk
@@ -88085,7 +88096,6 @@
 /wem/14/148502046.wem
 /wem/15/153838692.wem
 /wem/15/154508061.wem
-/wem/16/161168761.wem
 /wem/16/161439577.wem
 /wem/16/163095055.wem
 /wem/17/17053869.wem
@@ -88103,6 +88113,7 @@
 /wem/21/21524853.wem
 /wem/21/218636136.wem
 /wem/22/225686462.wem
+/wem/22/226381116.wem
 /wem/22/229309779.wem
 /wem/23/233831135.wem
 /wem/23/234263218.wem

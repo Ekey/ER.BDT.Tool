@@ -12,3 +12,11 @@ Tool for extract BDT archives from game - [ELDEN RING](https://store.steampowere
 > If your paths contain spaces, use double quotes **""**
 
 > ER.Unpacker "**E:\Games\Steam\steamapps\common\ELDEN RING\Game\Data0.bhd**" "**D:\Unpacked**"
+
+| Archive   | Percent |
+|---      |--- |
+| Data0 | 4374 of 4434 (98%) |
+| Data1 | 37871 of 37878 (99%) |
+| Data2 | 36223 of 36240 (99%) |
+| Data3 | 1556 of 1556 (100%) |
+| sd\sd | 8289 of 8298 (99%) |
