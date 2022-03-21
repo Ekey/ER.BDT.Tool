@@ -16,8 +16,8 @@ Tool for extract BDT archives from game - [ELDEN RING](https://store.steampowere
 # Archives Info
 | Archive   | Percent |
 |---      |--- |
-| Data0 | 4380 of 4434 (98%) |
-| Data1 | 37871 of 37878 (99%) |
-| Data2 | 36223 of 36240 (99%) |
+| Data0 | 4422 of 4434 (99%) |
+| Data1 | 37878 of 37878 (100%) |
+| Data2 | 36240 of 36240 (100%) |
 | Data3 | 1556 of 1556 (100%) |
-| sd\sd | 8289 of 8298 (99%) |
+| sd\sd | 8298 of 8298 (100%) |
