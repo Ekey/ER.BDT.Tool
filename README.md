@@ -21,3 +21,6 @@ Tool for extract BDT archives from game - [ELDEN RING](https://store.steampowere
 | Data2 | 36240 of 36240 (100%) |
 | Data3 | 1556 of 1556 (100%) |
 | sd\sd | 8298 of 8298 (100%) |
+
+# Special Thanks
+To :point_right: [googleben](https://github.com/googleben) :point_left: for the provided list of missing filenames :eyeglasses:
