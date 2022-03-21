@@ -24,3 +24,7 @@ Tool for extract BDT archives from game - [ELDEN RING](https://store.steampowere
 
 # Special Thanks
 To :point_right: [googleben](https://github.com/googleben) :point_left: for the provided list of missing filenames :eyeglasses:
+
+# Other Souls Projects
+* [Atvaark (BinderTool)](https://github.com/Atvaark/BinderTool)
+* [JKAnderson (SoulsFormats)](https://github.com/JKAnderson/SoulsFormats)
