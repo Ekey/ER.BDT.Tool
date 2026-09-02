@@ -19,7 +19,9 @@ namespace ER.Unpacker
                 case "Data2": return BinderKeys.m_Data2;
                 case "Data3": return BinderKeys.m_Data3;
                 case "sd": return BinderKeys.m_Sd;
-                default: return "null";
+                case "sd_dlc02": return BinderKeys.m_Sd;
+                case "DLC": return BinderKeys.m_Sd;
+                default: throw new Exception("Encryption key for archive " + m_BinderFile + " not found");
             }
         }
 
